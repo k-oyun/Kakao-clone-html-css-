@@ -1,0 +1,56 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    /* 화면의 100% 사용 */
+    width: 100%;
+    background-color: #f9f9fa;
+
+    /* padding이 적용되어도 box의 사이즈를 고정시키도록 */
+    box-sizing: border-box;
+
+    padding: 20px 50px;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    /*relative와 absolute를 같이 써야함*/
+    position: relative;
+    color: #2e363e;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    /*span은 css가 안듣기 때문에 display를 해줘야함*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    /*겹침을 허용*/
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.nav__ellpisis{
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    /*span은 css가 안듣기 때문에 display를 해줘야함*/
+    display: flex;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    left: 35px;
+    bottom: -5px;
+
+}

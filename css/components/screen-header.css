@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontal-space);
+    margin-bottom: 15px;
 }
 
 .screen-header__title{
@@ -12,4 +13,19 @@
 
 .screen-header__icons span{
     margin-left: 20px;
+}
+
+.screen-header__ellpisis{
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    /*span은 css가 안듣기 때문에 display를 해줘야함*/
+    display: flex;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    left: 70px;
+    top: -20px;
+    
+    
 }

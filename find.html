@@ -1,0 +1,124 @@
+<!--웹 서버가 default로 index.html을 찾음-->
+<!--단축키 --> 
+<!---! 시 doctype자동 작성--->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find - Kokoa Clone</title>
+    </head>
+
+    <body >
+        <div class="status-bar" > 
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <!--To do : Wifi Icon-->
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+
+            <div class="status-bar__column">
+                <span>110%</span>
+                <!--Battery Icon-->
+                <i class="fa-solid fa-battery-full fa-lg"></i>
+                <!--Lightining Icon-->
+                <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+
+        </div>
+
+
+        <header class="screen-header">
+            <h1 class="screen-header__title">Find</h1>
+            <div class="screen-header__icons">
+                    <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                    <span><i class="fa-solid fa-gear fa-lg"></i></span>
+                    <span class="screen-header__ellpisis">  </span>
+            </div>
+        </header>
+
+
+        <main class="main-screen">
+            <div class="icon-row">
+                <div class="icon-row__icon">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span>QR Code</span></div>
+                <div class="icon-row__icon">
+                    <i class="fa-regular fa-address-book"></i>
+                    <span>Add by Contacts</span></div>
+                <div class="icon-row__icon">
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <span>Add by ID</span></div>
+                <div class="icon-row__icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Invite</span></div>
+            </div>
+
+            <div class="recommend-friends">
+                <h6 class="recommend-friends__title">Recommended Friends</h6>
+                <span>You have no recommended friends.</span>
+            </div>
+
+            <div class="open-chat">
+                <div class="open-chat__header">
+                    <h4 class="open-chat__title">Open Chat</h4>
+                    <span>Go to Openchat Home <i class="fa-solid fa-chevron-right fa-xs"></i></span>
+                </div>
+
+                <div class="open-post">
+                    <div class="open-post__column">
+                        <h5 class="open-post__title">#BTS</h5>
+                        <h6 class="open-post__hashtags">#bts#army#friends</h6>
+                        <div class="open-post__memebers">
+                            <img src="file:///C:/Users/dhdbs/OneDrive/Desktop/front-study/oyun.JPG" />
+                            <span class="open-post__member-count">802 members</span>
+                            <div class="divider"></div>
+                            <span class="open-post__member-status">Active</span>
+                        </div>
+                    </div>
+                    <div class="open-post__column">
+                        <div class="open-post__photo">
+                            <img src="data:image/jpeg;base64,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"/>
+                            <div class="open-post__heart-count">
+                                <i class="fa-solid fa-heart fa-xs"></i> 
+                                <span>326</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+
+        <!--단축키-->
+        <!--nav>ul>li*4>a-->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__btn"><a class="nav__link"href="friends.html">
+                    <i class="fa-regular fa-user fa-2x"></i></a></li>
+                <li class="nav__btn"><a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i></a></li>
+                <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+                <li class="nav__btn"><a class="nav__link" href="more.html">
+                    <span class="nav__ellpisis"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
+            </ul>
+        </nav>
+        
+
+        
+
+        <!--아이콘 사용을 위한 것-->
+        <script src="https://kit.fontawesome.com/dc83dc9b05.js" crossorigin="anonymous">
+
+        </script>
+    </body>
+</html>

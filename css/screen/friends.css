@@ -29,3 +29,31 @@
     justify-content: space-between;
     color:rgba(0, 0, 0, 0.5);
 }
+
+@keyframes hideSplashScreen{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        /* 마우스 사용은 가능하지만 여전히 남아있음*/
+        visibility: hidden;
+        /*완전히 제거하려면 java script를 사용해야함*/
+    }
+}
+
+#splash-screen{
+    background-color: var(--yellow);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+    /* 효과가 계속 유지되도록 forwords 사용 즉 to를 기억*/
+    animation: hideSplashScreen 0.4s ease-in-out forwards;
+    /*애니메이션 시작을 지연*/
+    animation-delay: 2s;
+}
